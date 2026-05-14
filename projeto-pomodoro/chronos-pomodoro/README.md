@@ -1,48 +1,3 @@
-# Atualizando o título da aba por página (document.title)
-
-## Objetivo
-
-Melhorar a experiência de navegação da aplicação configurando o título da aba do navegador de forma dinâmica em cada página principal.
-
-## Como esta prática foi definida
-
-Sem transcrição nesta etapa: a prática foi inferida diretamente dos arquivos modificados da branch, que mostram a adição de `useEffect` com `document.title` nas páginas:
-
-- `Home`
-- `History`
-- `Settings`
-- `AboutPomodoro`
-- `NotFound`
-
-## O que foi implementado
-
-Em cada página, foi adicionado:
-
-1. `import { useEffect } from 'react';`
-2. `useEffect(() => { document.title = '...'; }, []);`
-
-Com isso, sempre que a página é aberta, o título da aba é atualizado para refletir o conteúdo atual da rota.
-
-## Benefícios
-
-- Melhora usabilidade (o usuário sabe em qual seção está só pela aba).
-- Ajuda em organização quando há várias abas abertas.
-- Prepara terreno para melhorias de SEO e acessibilidade sem dependências extras.
-
-## Resultado esperado
-
-- Home: título da aba exibe `Chronos Pomodoro`.
-- Histórico: título da aba exibe `Histórico - Chronos Pomodoro`.
-- Configurações: título da aba exibe `Configurações - Chronos Pomodoro`.
-- Sobre: título da aba exibe `Entenda a Técnica Pomodoro - Chronos Pomodoro`.
-- 404: título da aba exibe `Página não encontrada - Chronos Pomodoro`.
-
----
-
-## Código-fonte dos arquivos modificados nesta branch
-
-### `src/pages/Home/index.tsx`
-
 ```tsx
 import { useEffect } from 'react';
 import { Container } from '../../components/Container';
@@ -68,9 +23,6 @@ export function Home() {
   );
 }
 ```
-
-### `src/pages/History/index.tsx`
-
 ```tsx
 import { TrashIcon } from 'lucide-react';
 import { Container } from '../../components/Container';
