@@ -41,3 +41,51 @@ body {
   flex-direction: column;
   gap: 2.4rem;
 }
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #09090a;
+  color: #e1e1e6;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #121214;
+  border-radius: 8px;
+}
+
+.login-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+.login-footer button {
+  background: transparent;
+  border: none;
+  color: #8d8d99;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-decoration: underline;
+}
+
+/* Botão Entrar */
+.btn-submit {
+  padding: 1rem;
+  background-color: #00875f;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
