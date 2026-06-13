@@ -1,0 +1,168 @@
+
+:root {
+    --cor-primaria: #2563eb;
+    --cor-secundaria: #f59e0b;
+    --cor-neutra-fundo: #f3f4f6;
+    --cor-texto: #1f2937;
+    
+    --fonte-titulos: 'Oswald', sans-serif;
+    --fonte-textos: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-textos);
+    background-color: var(--cor-neutra-fundo);
+    color: var(--cor-texto);
+}
+
+.header {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--fonte-titulos);
+}
+
+.logo-img {
+    height: 60px;
+    width: auto;  
+}
+
+.cart {
+    font-weight: bold;
+    text-decoration: none; 
+    color: white; 
+    transition: opacity 0.2s;
+}
+
+.cart:hover {
+    opacity: 0.8;
+}
+
+.hero {
+    background-color: var(--cor-texto);
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte-titulos);
+    font-size: 1.5rem;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    background-color: #e5e7eb;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    color: #9ca3af;
+}
+
+.product-name {
+    font-family: var(--fonte-titulos);
+    margin-bottom: 0.5rem;
+}
+
+.price-original {
+    text-decoration: line-through;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+.price-discount {
+    color: var(--cor-secundaria);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.btn-buy {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.btn-buy:hover {
+    opacity: 0.9;
+}
+
+.footer {
+    background-color: #111827;
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; 
+}
+
+.footer-infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.contact-info {
+    text-align: center;
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem; 
+    font-size: 1.8rem; 
+}
+
+.social-icons a {
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.copyright-text {
+    font-size: 0.9rem;
+    color: #9ca3af;
+    text-align: center;
+}
