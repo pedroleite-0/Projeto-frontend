@@ -1,83 +1,115 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech-Info - Aula de Flexbox</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <header class="header">
-    <div class="logo">LOGO</div>
-    <h1 class="title">Tech-Info distribuidora de produtos de informática</h1>
-    <div class="cart">
-      🛒
-    </div>
-  </header>
 
-  <nav class="navbar">
-    <div class="nav-links">
-      <div class="nav-item"></div>
-      <div class="nav-item"></div>
-      <div class="nav-item"></div>
-      <div class="nav-item"></div>
-    </div>
-    <div class="nav-right-item"></div>
-  </nav>
+    <header class="header">
+        <a href="#" class="logo-link">
+            <img src="https://placehold.co/200x50/2563eb/white?text=TechStore&font=Oswald" alt="TechStore Logo" class="logo-img">
+        </a>
+        <a href="#" class="cart">
+            🛒 Carrinho <span class="cart-count">0</span>
+        </a>
+    </header>
 
-  <section class="carousel-section">
-    <div class="arrow">◀</div>
-    <div class="carousel-banner">
-      <h2>Carrossel de imagens</h2>
-    </div>
-    <div class="arrow">▶</div>
-  </section>
+    <section class="hero">
+        <h2>As melhores ofertas de tecnologia!!!</h2>
+    </section>
 
-  <main class="products-container">
+    <main class="product-grid">
+        
+        <article class="card">
+            <img src="./img/fonte.jpeg" class="card-image" alt="Fonte">
+            <h3 class="product-name">Fonte</h3>
+            <p class="price-original">R$ 500,00</p>
+            <p class="price-discount">R$ 399,00</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </article>
 
-    <article class="card">
-      <div class="card-image"></div>
-      <p class="card-desc">Descrição do card</p>
-      <button class="btn btn-cart">Adicionar ao carrinho</button>
-      <button class="btn btn-buy">Comprar</button>
-    </article>
+        <article class="card">
+            <img src="./img/gabinete.jpeg" class="card-image" alt="Gabinete">
+            <h3 class="product-name">Gabinete</h3>
+            <p class="price-original">R$ 3.500,00</p>
+            <p class="price-discount">R$ 2.899,00</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </article>
 
-    <article class="card">
-      <div class="card-image"></div>
-      <p class="card-desc">Descrição do card</p>
-      <button class="btn btn-cart">Adicionar ao carrinho</button>
-      <button class="btn btn-buy">Comprar</button>
-    </article>
+        <article class="card">
+            <img src="./img/hd externo.jpeg" class="card-image" alt="HD">
+            <h3 class="product-name">HD externo 1TB</h3>
+            <p class="price-original">R$ 600,00</p>
+            <p class="price-discount">R$ 499,00</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </article>
 
-    <article class="card">
-      <div class="card-image"></div>
-      <p class="card-desc">Descrição do card</p>
-      <button class="btn btn-cart">Adicionar ao carrinho</button>
-      <button class="btn btn-buy">Comprar</button>
-    </article>
+        <article class="card">
+            <img src="./img/kit teclado mouse.jpeg" class="card-image" alt="kit teclado mouse">
+            <h3 class="product-name">KIT teclado e mouse</h3>
+            <p class="price-original">R$ 200,00</p>
+            <p class="price-discount">R$ 159,00</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </article>
 
-    <article class="card">
-      <div class="card-image"></div>
-      <p class="card-desc">Descrição do card</p>
-      <button class="btn btn-cart">Adicionar ao carrinho</button>
-      <button class="btn btn-buy">Comprar</button>
-    </article>
+        <article class="card">
+            <img src="./img/placa de video.jpeg" class="card-image" alt="placa de video">
+            <h3 class="product-name">Placa de Vídeo</h3>
+            <p class="price-original">R$ 12.200,00</p>
+            <p class="price-discount">R$ 9.999,00</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </article>
 
-    <article class="card">
-      <div class="card-image"></div>
-      <p class="card-desc">Descrição do card</p>
-      <button class="btn btn-cart">Adicionar ao carrinho</button>
-      <button class="btn btn-buy">Comprar</button>
-    </article>
+        <article class="card">
+            <img src="./img/placa mae.jpeg" class="card-image" alt="placa mae">
+            <h3 class="product-name">Placa mãe</h3>
+            <p class="price-original">R$ 750,00</p>
+            <p class="price-discount">R$ 710,00</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </article>
 
-  </main>
+        <article class="card">
+            <img src="./img/processador.jpeg" class="card-image" alt="processador">
+            <h3 class="product-name">Processador</h3>
+            <p class="price-original">R$ 850,00</p>
+            <p class="price-discount">R$ 799,00</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </article>
 
-  <footer class="footer">
-    <p>&copy; Todos os direitos reservados 2026</p>
-  </footer>
+        <article class="card">
+            <img src="./img/ssd.jpeg" class="card-image" alt="ssd">
+            <h3 class="product-name">SSD 1TB</h3>
+            <p class="price-original">R$ 2.50,00</p>
+            <p class="price-discount">R$ 1.500,00</p>
+            <button class="btn-buy">Adicionar ao Carrinho</button>
+        </article>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-infos">
+            <div class="contact-info">
+                <p>📧 contato@techstore.com</p>
+                <p>📱 (61) 99192-4387</p>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" title="Discord"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+
+        <p class="copyright-text">&copy; 2026 TechStore. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
-
 </html>
